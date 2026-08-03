@@ -11,6 +11,16 @@ export const docs = [
     summary:
       "Las 8 clases jugables: Amazona, Asesina, Bárbaro, Nigromante, Paladín, Hechicera, Druida y el nuevo Warlock — con atributos y estilos de juego.",
     synonyms: ["clases", "heroes", "personajes", "las 8 clases", "god"],
+    img: "/img/keyart.webp",
+    gallery: [
+      { img: "/img/amazon.webp", name: "Amazona" },
+      { img: "/img/asesina.webp", name: "Asesina" },
+      { img: "/img/barbaro.webp", name: "Bárbaro" },
+      { img: "/img/nigromante.webp", name: "Nigromante" },
+      { img: "/img/paladin.webp", name: "Paladín" },
+      { img: "/img/hechicera.webp", name: "Hechicera" },
+      { img: "/img/druida.webp", name: "Druida" },
+    ],
   },
   {
     slug: "warlock",
@@ -111,6 +121,7 @@ export const docs = [
     summary:
       "Los 5 actos de la carnefría, sus jefes, dificultad Normal/Pesadilla/Infierno y las mejores zonas.",
     keywords: ["actos", "dificultades", "jefes", "mazmorras", "faureas", "misiones"],
+    img: "/img/tristram.webp",
   },
   {
     slug: "endgame",
@@ -121,6 +132,7 @@ export const docs = [
     summary:
       "Terror Zones, Heralds of Terror, Sunder Charms, Worldstone Shards y los Colossal Ancients.",
     keywords: ["terror zones", "heralds", "sunder charms", "colossal ancients", "worldstone"],
+    img: "/img/mephisto.webp",
   },
 ]
 

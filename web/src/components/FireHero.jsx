@@ -21,6 +21,16 @@ export default function FireHero() {
             "radial-gradient(120% 80% at 50% 110%, rgba(255,80,15,0.35), transparent 55%), radial-gradient(90% 60% at 50% 0%, rgba(255,120,40,0.12), transparent 60%), var(--color-coal)",
         }}
       />
+
+      {/* arte oficial como fondo tenue */}
+      <img
+        src="/img/keyart-hero.webp"
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+        className="absolute inset-0 w-full h-full object-cover object-center opacity-25"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-abyss/70 via-abyss/40 to-coal/90" />
       <div className="absolute inset-0 bg-tex-rune opacity-40" />
 
       <EmberField count={30} travel="46vh" />

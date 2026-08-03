@@ -55,6 +55,42 @@ export default function Home() {
 
         <div className="fire-line" />
 
+        {/* galería de clases con arte oficial */}
+        <section className="scroll-mt-24">
+          <div className="flex items-baseline gap-3 mb-5">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-gold-light">Arte oficial</h2>
+            <span className="text-xs uppercase tracking-[0.3em] text-ghost">Renders de BlizzConline</span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
+            {["Amazon", "Asesina", "Bárbaro", "Nigromante", "Paladín", "Hechicera", "Druida"].map(
+              (name, i) => {
+                const file = {
+                  Amazon: "amazon",
+                  Asesina: "asesina",
+                  Bárbaro: "barbaro",
+                  Nigromante: "nigromante",
+                  Paladín: "paladin",
+                  Hechicera: "hechicera",
+                  Druida: "druida",
+                }[name]
+                return (
+                  <figure key={name} className="d2-card group rounded-xl overflow-hidden">
+                    <img
+                      src={`/img/${file}.webp`}
+                      alt={`Arte oficial de la clase ${name}`}
+                      className="w-full aspect-video object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                    <figcaption className="text-center text-[11px] font-display tracking-widest text-gold-light py-2">
+                      {name}
+                    </figcaption>
+                  </figure>
+                )
+              }
+            )}
+          </div>
+        </section>
+
         {groups.map((g) => (
           <GroupSection key={g.id} group={g} />
         ))}

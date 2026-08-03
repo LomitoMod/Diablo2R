@@ -93,6 +93,39 @@ export default function MarkdownPage() {
             </div>
           </div>
           <p className="max-w-3xl text-faded text-base leading-relaxed">{doc.summary}</p>
+
+          {doc.img && (
+            <div className="mt-6 rounded-2xl overflow-hidden border border-gold/20 shadow-[0_18px_50px_-16px_rgba(0,0,0,0.9)]">
+              <img
+                src={doc.img}
+                alt={`Arte oficial de ${doc.title}`}
+                className="w-full h-52 md:h-72 object-cover object-center"
+                loading="lazy"
+              />
+            </div>
+          )}
+
+          {doc.gallery && (
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
+              {doc.gallery.map((g) => (
+                <figure
+                  key={g.name}
+                  className="d2-card group rounded-xl overflow-hidden flex flex-col items-center"
+                >
+                  <img
+                    src={g.img}
+                    alt={`Arte de la clase ${g.name}`}
+                    className="w-full aspect-video object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <figcaption className="text-[11px] font-display tracking-widest text-gold-light py-2">
+                    {g.name}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
+
           <div className="fire-line mt-6" />
         </header>
 

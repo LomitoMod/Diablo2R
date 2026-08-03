@@ -42,6 +42,7 @@ export default function Footer() {
               <li>Temporada 14 · Reign of the Warlock</li>
               <li>Web creada con React + Tailwind CSS</li>
               <li>Datos extraídos de la carpeta <code className="text-gold/80">web/informacion/</code></li>
+              <li>Imágenes del press kit oficial de Blizzard (blizzard.gamespress.com)</li>
             </ul>
           </div>
         </div>
