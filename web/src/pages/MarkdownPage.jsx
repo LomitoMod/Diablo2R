@@ -53,7 +53,6 @@ function nodeToText(node) {
 export default function MarkdownPage() {
   const { slug } = useParams()
   const doc = bySlug(slug)
-
   const raw = content[slug]
   const bodyMd = useMemo(() => (raw ? splitBody(raw) : ""), [raw])
 

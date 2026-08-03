@@ -3,7 +3,6 @@ import { HashRouter, Routes, Route, useLocation, Link } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import SearchModal from "./components/SearchModal"
-import { docs } from "./data/docs"
 
 const Home = lazy(() => import("./pages/Home"))
 const MarkdownPage = lazy(() => import("./pages/MarkdownPage"))
@@ -50,9 +49,7 @@ function Shell() {
         >
           <Routes>
             <Route path="/" element={<Home />} />
-            {docs.map((d) => (
-              <Route key={d.slug} path={`/${d.slug}`} element={<MarkdownPage />} />
-            ))}
+            <Route path="/:slug" element={<MarkdownPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
