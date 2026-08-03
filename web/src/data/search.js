@@ -128,7 +128,7 @@ function levenshtein(a, b) {
 // Busqueda principal. Devuelve: { hits, tokens, synonymsUsed, noneg }
 export function buscar(query) {
   const q = norm(query)
-  if (!q) return { hits: [], tokens: [], synonymsUsed: false, resultados: 0 }
+  if (!q) return { hits: [], tokens: [], synonymsUsed: false, results: 0 }
 
   const rawTokens = [...new Set(q.split(" "))].filter(Boolean)
   const synonymsUsed = rawTokens.some((t) => SYNONYMS[t])

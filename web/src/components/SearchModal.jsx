@@ -136,7 +136,7 @@ export default function SearchModal({ open, onClose }) {
             )}
 
             {hits.map((h) => {
-              const snippet = highlight(h.summary + " " + h.bodyNorm, result.tokens)
+              const snippet = highlightText(h.summary + " " + h.bodyNorm, result.tokens)
               return (
                 <Link
                   key={h.slug}

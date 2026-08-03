@@ -41,7 +41,7 @@ export default function Footer() {
               <li>Versión del juego: 3.2.92777</li>
               <li>Temporada 14 · Reign of the Warlock</li>
               <li>Web creada con React + Tailwind CSS</li>
-              <li>Datos extraídos de la carpeta <code className="text-gold/80">informacion/</code></li>
+              <li>Datos extraídos de la carpeta <code className="text-gold/80">web/informacion/</code></li>
             </ul>
           </div>
         </div>
