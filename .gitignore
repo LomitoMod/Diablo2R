@@ -1,0 +1,17 @@
+# Dependencias y build
+node_modules/
+web/dist/
+web/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+vite-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Entorno
+.env
+.env.*
